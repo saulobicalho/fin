@@ -12,3 +12,25 @@ Em llc todos os proprietarios tem responsabilidade limitada.
 A responsabilidade limitada dos proprietarios em llc nao os impede de administrar a empresa.
 Em quotas limitada apenas é possivel a existencia de um unico socio solidario.
 Em ambos os casos a tributação é direta.
+
+2.Vantagens: As corporações possuem muitos poderes legais tal como as pessoas - figuração em contratos, aquisição de ativos, incorrer em obrigações, proteção constitucional contra desapropriação de patrimonio.
+A corporação possui responsabilidade apenas sobre suas obrigações, e não sobre as dos proprietários, e vice-versa.
+Número ilimitado de proprietários.
+
+
+Desvantagens: estabelecimento mais dispendioso que empresas individuais.
+Acionistas de uma corporação pagam impostos duas vezes (Corporação C)
+
+
+cap2
+
+
+1.indice market-to-book:	capitalização da empresa/valor contabil da empresa
+obs: a capitalização mede o valor de mercado do pat.liquido
+o valor de mercado do patliquido é o que sobre apos a quitação das dividas
+
+
+2.indice capital de terceiros/capital proprio:	divida total/patrimonio liquido total
+
+3.valor da empresa = valor de mercado do pat.liq + divida -caixa
+
