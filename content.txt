@@ -34,3 +34,33 @@ o valor de mercado do patliquido é o que sobre apos a quitação das dividas
 
 3.valor da empresa = valor de mercado do pat.liq + divida -caixa
 
+
+
+DRE
+
+lucro por ação (EPS)
+	eps = lucro liquido/acoes em circulacao
+
+lucro por acao diluido
+	é novo calculo dos rendimentos por acao, depois do exercicio das opcoes de acao.
+	opcoes de acao sao aquelas em que a empresa permite aos funcionarios comprar acoes, até certa data, sob um preço
+	opcoes de acao sao uma de duas formas de aumentar o nº de acoes, a outra é por titulos conversiveis.
+	titulos conversiveis sao aqueles que a empresa emite para converter dividas em acoes ordinarias
+
+indices de rentabilidade
+	esses indices, que sao margens, têm como denominador as vendas
+	o numerador desses indices é um dos lucros
+
+	margem bruta		=	lucro bruto/total de vendas
+	margem operacional	=	lucro operacional/total de vendas
+	margem de lucro liquido	=	lucro liquido/total de vendas
+
+	lembrando que o lucro bruto é a diferença de vendas pelo custo das vendas
+	lucro operacional é o lucro bruto, abatido despesas operacionais
+	lucro liquido é o lucro abatidos impostos e juros
+
+
+indices de eficiencia de ativos
+indices de eficiencia de capital de giro
+
+
