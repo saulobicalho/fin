@@ -47,6 +47,7 @@ lucro por acao diluido
 	opcoes de acao sao uma de duas formas de aumentar o nº de acoes, a outra é por titulos conversiveis.
 	titulos conversiveis sao aqueles que a empresa emite para converter dividas em acoes ordinarias
 
+----------------------------
 indices de rentabilidade
 	esses indices, que sao margens, têm como denominador as vendas
 	o numerador desses indices é um dos lucros
@@ -59,8 +60,29 @@ indices de rentabilidade
 	lucro operacional é o lucro bruto, abatido despesas operacionais
 	lucro liquido é o lucro abatidos impostos e juros
 
-
+--------------------------------
 indices de eficiencia de ativos
+
+	giro dos ativos		=	vendas/ativos	
+	giro dos ativos fixos	=	vendas/ativos fixos, sendo os ativos fixos aqueles encontrados nos ativos realizaveis a longo prazo
+--------------------------------
 indices de eficiencia de capital de giro
+
+	prazo de recebimento em dias	=	contas a receber/vendas medias diarias,
+onde contas a receber está nos ativos, e vendas medias diarias é obtido por dre
+notar q o denominador p obtencao das vendas medias diarias será 365, salvo engano
+
+	giro do estoque	=	vendas/estoque	
+esse indice nada tem que ver com tempo de consumo de um estoque, mas quanto de dinheiro de venda por dinheiro de estoque
+--------------------------------
+EBITDA
+	O EBITDA não aparece na DRE, pois nesta, para se obter o lucro operacional, se tira a depreciação e amortização.
+O EBTIDA, portanto não é o lucro bruto, dado que este possui apenas os valores de vendas, e seus custos, e nao inclui as outras operações da empresa (despesas gerais, pesquisa, etc).
+Cálculo EBTIDA	=	lucro operacional + depreciacao e amortizacao
+--------------------------------
+indices de alavancagem
+
+
+
 
 
