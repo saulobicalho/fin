@@ -10,9 +10,57 @@
     <h2>Q1</h2>
     calcular <a href="#2.3">market-to-book</a> dados dois diferentes valores de ação. O primeiro desses valores é o valor patrimonial da ação. 18reais. O segundo é a cotação do valor da
       ação na bolsa, de 24reais.
-    <h1>Cap 2 - Balanco PAtrimonial</h1>
-    <h2>  <a name="2.3"> 2.3</a></h2>
+    <h2>Q2</h2>
+    caracteristicas de <a href="#corporacoes">empresas do tipo S/A</a>. <br>
+    i falsa, nao há essa responsabilidade.
+    iii V, não há essa limitação.
+    <h2>Q3</h2>
+    <a href="#sistemaprice">Valor futuro de uma anuidade com sistema price de prestações iguais</a> de n=12, y=6.5 enter 12/, PV=0, PMT=250, FV=?, dando -3091,01 (gabarito 3088,00)
+    <h2>Q4</h2>
+    <a href="#5.3">valor presente de sequencia de fluxos de caixa</a>
+    Partir do pressuposto que o trimestre 0 é o saldo inicial. <br>Divisao em duas partes. <br>1 - calculo do valor presente dos fluxos de caixa de prestações de 100000 nos trimestres 1-4.
+    <br>do valor presente encontrado em 1, tira-se 250,00.<br>
+    solução de 1: anuidade com n=4, r= 7 enter 4/, pmt = 100000, pv=?, achando pv= -383.094,25. Solução de 2:-383.094,25 + 250 = 133.094,2 (gabarito 133.506,55)
+    <h2>Q5</h2>
+    <a href="#sistemaprice">Valor presente de uma anuidade com sistema price de prestações iguais</a>
+    Anuidade com sistema price. n=4, i=12 enter 2/, pv=-200000, pmt=pedir. Calcular os juros amortizados no periodo total, que é 4 f amort = .<br>
+    Obs: mesmo q pro exercicio nao interesse o valor de pmt, é preciso pedir o mesmo, apertando PMT após entrar com n, pv e i, pois senão o resultado dá errado (52k) Quando o certo é aprox.30k(gaba 29k)<br>
+    Como é um empréstimo que o exercicio informa que está sendo quitado, deve-se pedir pelo calculo do PMT. Caso contrário, vai-se entender que o empréstimo não está sendo pago, o que é outra modalidade de exercicio <br>
+    <h2>Q6</h2>
+    <a href="#sistemaprice">Valor futuro de uma anuidade com sistema price de prestações iguais</a>
+    n=360, i=6 enter 365/, pv=100000 fv=? . A resposta dá fv= -106.095,90<br>
+    Obs: Como nesse caso nao se diz que se esta pagando prestacoes do emprestimo, se quer apenas rolar a divida, sem quitar em prestações, deve-se omitir o botao PMT, caso contrário, dará erro.
+    <h1>Cap 1</h1>
+    <h2><a name="corporacoes"> corporacoes</a></h2>
+    Os proprietarios e funcionarios nao incorrem em obrigações. É um tipo conhecido pelo n ilimitado de proprietarios de ações.
+    <h1>Cap 2 - Balanco Patrimonial</h1>
+    <h2><a name="2.3"> 2.3</a></h2>
      Indice market-to-book = valor de mercado do PL / valor contabil do PL
+    <h1>Cap 3</h1>
+    <h2>Valor Presente Liquido</h2>
+    NPV = PV dos Beneficios - PV dos Custos
+    <h1>Cap 4 - NPV e o Valor do Dinheiro no Tempo</h1>
+    <h2>Valor futuro de um fluxo de caixa</a></h2>
+    FV = C * (1+r)^n
+    <h2>Valor presente de um fluxo de caixa</a></h2>
+    PV = C /(1+r)^n
+    <h2>Valor futuro de uma anuidade</h2>
+    Nao precisa saber a formula, q é dificil, basta usar HP12-C, com n,y,PV,PMT e pedir FV.
+    <h1>Cap 5 - Taxas de Juros</h1>
+    <h2> <a name="sistemaprice">Sistema Price de prestações iguais</a></h2>
+    Exemplo: Para comprar um apartamento você pega um empréstimo no banco de R$ 40 000,00 a uma taxa de 15 % a.a. para pagá-la em 60 meses. Calcule o valor das prestações, dos juros e do total amortizado no primeiro, segundo e terceiro anos, separadamente.
+ <br>Pela HP:                                       Visor:<br>
+Limpe as memórias: [F][REG]                         0.00 <br>
+Entre com o empréstimo: 40 000 [PV]                 40 000.00 <br>
+Entre com o número de meses: 60 [n]                 60.00 <br>
+Entre com a taxa de juros: 15 [enter][12/] [ i ]    1.25 <br>
+Calcule as prestações: [PMT]                        -951.60 <br>
+Calcule os juros no primeiro ano: 12 [F][AMORT]     -5 611.46 <br>
+Calcule o total amortizado no primeiro ano: [x y]   -5 807.70 <br>
+Pela [ F ] [ AMORT ] temos o total dos juros pagos no período introduzido imediatamente antes. Note, que o período tem que ser expresso na mesma unidade da taxa, no caso, mensal. A tecla [ x y ] quando apertada após o cálculo dos juros, mostra o principal já amortizado.
+    <h2> <a name="5.3"> 5.3 Os determinantes das taxas de juros</a> </h2>
+    O valor presente de uma sequencia de fluxos de caixa é dado pela soma do valor presente de cada fluxo. <br>
+    pv sequencia = somatorio (i=0 ...n) Ci/(1+r)^i
     <h1>Cap 7 - Regras de Decisoes de Investimento</h1>
     <h2>7.1 Utilização da regra do NPV</h2>
     Regra do NPV usada para maximizar riqueza <br>
