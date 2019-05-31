@@ -36,7 +36,14 @@
     Por <a href="#6.1">cupons</a> se infere que o título em questão, tesouro direto, prevê pagamentos periódicos de juros, até a data de vencimento. Tal informação se
     confirma pela sequencia do enunciado, que se refere a juros semenstrais.<br>
     O principal, ou valor de face, é 1k. Ele será usado para o calculo dos juros, e deve ser devolvido para o titular na maturidade do titulo, que é, nesse caso, de 2 anos.<br>
-    Por pré-fixado se sabe que a rentabilidade foi definida na emissão do papel.
+    Por pré-fixado se sabe que a rentabilidade foi definida na emissão do papel.<br>
+    Observa-se que não se trata de título de dívida de cupom zero, que é tratado na seção 6.2, caso em que os titualares receberiam apenas o valor de face (no caso, 1k),
+    pré ou pós fixado. <br>
+    A questão fala de retorno até o vencimento, provavelmente se refere à taxa de retorno interno, que é a rentabilidade até o vencimento. No caso, interessa a aplicação
+    dessa taxa para um título de dívida de cupom, conforme a <a href="#6.3">seção 6.3.</a> <br>
+    Naquela seção ainda se trata a classificação dos títulos quanto ao seu intervalo de término. No caso, o título deste problema é de 2 anos. Não se sabe se isto implica em
+    algo diferenciado, a princípio não. <br>
+
     <h1>Cap 1</h1>
     <h2><a name="corporacoes"> corporacoes</a></h2>
     Os proprietarios e funcionarios nao incorrem em obrigações. É um tipo conhecido pelo n ilimitado de proprietarios de ações.
@@ -44,7 +51,7 @@
     <h2><a name="2.3"> 2.3</a></h2>
      Indice market-to-book = valor de mercado do PL / valor contabil do PL
     <h1>Cap 3</h1>
-    <h2>Valor Presente Liquido</h2>
+    <h2><a name="NPV"> Valor Presente Liquido</a></h2>
     NPV = PV dos Beneficios - PV dos Custos
     <h1>Cap 4 - NPV e o Valor do Dinheiro no Tempo</h1>
     <h2>Valor futuro de um fluxo de caixa</a></h2>
@@ -53,6 +60,18 @@
     PV = C /(1+r)^n
     <h2>Valor futuro de uma anuidade</h2>
     Nao precisa saber a formula, q é dificil, basta usar HP12-C, com n,y,PV,PMT e pedir FV.
+    <h2> <a name="4.6">4.6 - Outros valores além de PV E FV</a> </h2>
+    <h3>IRR - Taxa interna de Retorno</h3>
+    No livro, se diz que em determinados casos se conhece o valor presente de uma oportunidade de Investimento, e os fluxos de caixa. Porém, não se conhece a taxa de juros. <br>
+    É neste caso que convém encontrar a IRR, que é a taxa de juros. <br>
+    Por exemplo, coloca-se o caso da pessoa que pagou 1k e depois de seis anos obteve 2k. <br>
+    O cálculo da IRR considera um <a href="#NPV">NPV</a>, valor presente líquido, zerado. Ou seja, sendo o NPV o valor presente dos benefícios menos o valor presente dos custos, é dado o valor
+    presente dos custos, que é o investimento inicial (no caso, 1k). Agora quer-se saber qual taxa de juros torna o valor presente dos benefícios igual a 1k também, de modo
+    a zerar o NPV. Os benefícios são dados por 2k/(1+r)^n, portanto, qual o valor de r tal que 2k/(1+r)=1? <br>
+    A razão dos benefícios serem dados por esta fórmula acima se deve ao fato de se tratar de uma descapitalização, uma vez que se conhece o valor futuro dos benefícios, 2k,
+    mas o mesmo precisa ser trazido a valor presente, ou seja, deve ser dividido por (1+r)^n. <br>
+    Assim, no caso, r=raizn(2k)-1.
+
     <h1>Cap 5 - Taxas de Juros</h1>
     <h2><a name="5.1">5.1 - Cotações e ajustes das taxas de juros</a></h2>
       Dada uma EAR, que é a taxa de juros efetiva de um ano, é possivel calcular a APR, taxa de juros percentual, que significa dividir a EAR pelo período desejado
@@ -83,6 +102,39 @@ mensal. A tecla [ x y ] quando apertada após o cálculo dos juros, mostra o pri
     Expressão dos cupons como uma APR, taxa percentual anual(de juros),como visto no <a href="#5.1">cap5</a>. CPN é a quantia de pagamento de cada cupom. CPN é dado pela
     formula:<br> taxa de cupom * valor de face / no de pgts de cupom no ano <br>
     Provavelmente a relação apontada entre APR e CPN se dá por se tratar de uma taxa dividida por períodos.
+    <h2> <a name="6.3">6.3 - Título de dívida de cupom</a></h2>
+    As fontes de renda de um título de cupom vêm de duas áreas, da devolução do valor de face, capitalizado (o que ocorre também no cupom zero) e do pagamento periódico dos
+    cupons. <br>
+    <h3>Rentabilidade até o vencimento</h3>
+    Antes de saber calcular a rentabilidade, é preciso conhecer os fluxos de caixa relacionados. Tais fluxos de caixa que devem ser conhecidos se referem inclusive ao pagamento
+    de juros de cupom, então é necessário saber a periodicidade dos pagamentos.
+    <h3>Ex 6.3</h3>
+    O intervalo entre momento original e momento de término classifica se é título ou não, qual tipo é, etc. Neste exemplo, por ser de 5 anos, é nota. <br>
+    O problema informa: data de vencimento (5 anos), valor de face (1k), taxa de cupom (5%), periodicidade dos cupons (semestrais). <br>
+    Observa-se que valor ao par significa valor de face. <br>
+    Uma taxa de cupom de x % com cupons semestrais quer dizer que todo ano são pagos os x%, em duas prestações semestrais. Os x% se referem ao valor de face. <br>
+    Primeiro, para calcular os fluxos de caixa, é necessário calcular quanto paga cada um dos cupons. <br>
+    O cálculo do valor de cada cupom é dado pelo CPN, onde CPN = taxa de cupom x valor de face / qtde de cupons por ano. Portanto, CPN = 5% ** 1k /2. <br>
+    O fluxo de caixa é montado com o pgto de 25 a cada semestre, e no vencimento o pgto do valor de face. <br>
+    Rentabilidade até o vencimento de um título de dívida é uma <a href="#4.6">IRR</a>. <br>
+    É preciso se ater à nomenclatura:<br>
+    CPN é o valor pago por um cupom. FV é o valor de face. P é o preço inicial, o investimento inicial que a pessoa pagou pelo titulo (no NPV, aparece como Custo). <br>
+    n é a quantidade de períodos. y é o mesmo que r, é a rentabilidade. <br>
+    Quando se fala de IRR no contexto de título de cupom, o NPV zerado corresponde à igualdade entre o preço de mercado atual (o preço inicial), e o valor presente dos
+    ganhos finais. Para essa equação funcionar é preciso achar y, que é a taxa r, que divide os ganhos finais, de modo a descapitalizá-lo. <br>
+    <h3>Após o ex 6.3</h3>
+    É preciso ver que o que se quer, para calcular a rentabilidade após o vencimento, é igualar P, o preço de mercado corrente, à soma dos valores presentes do valor de
+    face e do valor dos cupons. Para isso é preciso descapitalizar o valor de face, e descapitalizar os cupons (estes correspondem a uma anuidade). <br>
+    Observar que P, o preço de mercado corrente, não é necessariamente o valor de face do título. <br>
+    
+
+    <h3>Comentários</h3>
+    A rentabilidade é dada por uma porcentagem, ou seja, é uma taxa, que será chamada de y. <br>
+    Para achar y, basta igualá-la ao valor presente de certos fluxos de caixa. Tais fluxos de caixa são fluxos de caixa futuros e são aqueles do título, a seu preço. <br>
+    A taxa de desconto y, que deve ser encontrada para que se obtenha a rentabilidade, ocorre três vezes na fórmula da rentabilidade até o vencimento do título com cupom. <br>
+    Em todas as ocorrências da taxa de desconto y, a mesma se dá nos denominadores dos seus termos. <br>
+    A fórmula para a rentabilidade até o vencimento envolve, como um de seus termos, o valor CPN. O CPN, conforme visto na <a href="#6.1">seção 6.1</a>, é a quantia paga
+    por cada cupom (pois se trata do valor total pago pelos cupons, dividido pelo n de cupons).
     <h1>Cap 7 - Regras de Decisoes de Investimento</h1>
     <h2>7.1 Utilização da regra do NPV</h2>
     Regra do NPV usada para maximizar riqueza <br>
