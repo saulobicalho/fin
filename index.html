@@ -43,6 +43,17 @@
     dessa taxa para um título de dívida de cupom, conforme a <a href="#6.3">seção 6.3.</a> <br>
     Naquela seção ainda se trata a classificação dos títulos quanto ao seu intervalo de término. No caso, o título deste problema é de 2 anos. Não se sabe se isto implica em
     algo diferenciado, a princípio não. <br>
+    <h3>Resolução</h3>
+    Considerar a eq. 6.3, P= CPN/y*(1-(1/(1+y)^n))+FV/(1+y)^n, onde P=1064.10, n=4, CPN = 48.81, FV=1000 <br>
+    Conforme recomendação do livro, é preciso usar tentativa e erro. <br>
+    Tentataiva 1, y=3.15 a.a = 1.6 a.semestre (arredondamento da calculadora)
+    Substituindo na equação, ao fim dá erro.
+    Tentativa 3, y= 6.4 a.a = 3.2 a.semestre substitui corretamente, é a resposta.
+
+    <h2>Q8</h2>
+    Converter tx anual para mensal, pela fórmula: taxa anual = ((1+ taxa mensal)^n) -1 obtendo 0.0486 ou i=4.86(calculadora hp12c)
+    Fazer n=360, i= 4.86, pmt= 10000, fv=0, pv=perguntar, dando aprox. 1696725,81, letra b
+
 
     <h1>Cap 1</h1>
     <h2><a name="corporacoes"> corporacoes</a></h2>
@@ -65,9 +76,9 @@
     No livro, se diz que em determinados casos se conhece o valor presente de uma oportunidade de Investimento, e os fluxos de caixa. Porém, não se conhece a taxa de juros. <br>
     É neste caso que convém encontrar a IRR, que é a taxa de juros. <br>
     Por exemplo, coloca-se o caso da pessoa que pagou 1k e depois de seis anos obteve 2k. <br>
-    O cálculo da IRR considera um <a href="#NPV">NPV</a>, valor presente líquido, zerado. Ou seja, sendo o NPV o valor presente dos benefícios menos o valor presente dos custos, é dado o valor
-    presente dos custos, que é o investimento inicial (no caso, 1k). Agora quer-se saber qual taxa de juros torna o valor presente dos benefícios igual a 1k também, de modo
-    a zerar o NPV. Os benefícios são dados por 2k/(1+r)^n, portanto, qual o valor de r tal que 2k/(1+r)=1? <br>
+    O cálculo da IRR considera um <a href="#NPV">NPV</a>, valor presente líquido, zerado. Ou seja, sendo o NPV o valor presente dos benefícios menos o valor presente dos
+    custos, é dado o valor presente dos custos, que é o investimento inicial (no caso, 1k). Agora quer-se saber qual taxa de juros torna o valor presente dos benefícios
+    igual a 1k também, de modo a zerar o NPV. Os benefícios são dados por 2k/(1+r)^n, portanto, qual o valor de r tal que 2k/(1+r)^n=1k? <br>
     A razão dos benefícios serem dados por esta fórmula acima se deve ao fato de se tratar de uma descapitalização, uma vez que se conhece o valor futuro dos benefícios, 2k,
     mas o mesmo precisa ser trazido a valor presente, ou seja, deve ser dividido por (1+r)^n. <br>
     Assim, no caso, r=raizn(2k)-1.
@@ -126,7 +137,8 @@ mensal. A tecla [ x y ] quando apertada após o cálculo dos juros, mostra o pri
     É preciso ver que o que se quer, para calcular a rentabilidade após o vencimento, é igualar P, o preço de mercado corrente, à soma dos valores presentes do valor de
     face e do valor dos cupons. Para isso é preciso descapitalizar o valor de face, e descapitalizar os cupons (estes correspondem a uma anuidade). <br>
     Observar que P, o preço de mercado corrente, não é necessariamente o valor de face do título. <br>
-    
+    O texto diz que não existe fórmula simplificada para a rentabilidade de cupom (que não é zero), indica a necessidade de tentar por tentativa e erro. Portanto, até o
+    momento, se cair em prova questão desse tipo, montar a equação 6.3, e substituir a taxa de desconto y pelos valores das respostas, por tentativa e erro.
 
     <h3>Comentários</h3>
     A rentabilidade é dada por uma porcentagem, ou seja, é uma taxa, que será chamada de y. <br>
