@@ -236,6 +236,74 @@ mensal. A tecla [ x y ] quando apertada após o cálculo dos juros, mostra o pri
     Saber qual o valor máximo para preço inicial que compense o investimento.
     Resolução: Basta montar a equação, igualando os lados. po = (0.56+45.50)/1+0.068   =   43,127
 
+    <h2>investidor de múltiplos anos</h2>
+    Equação para preço de ação, por múltiplos anos:<br>
+    p0 = div1/1+re + div2/(1+re)² + ... + (divn + pn)/(1+re)^n <br>
+    Obs: Para estes exemplos considera-se a mesma re para todos os anos. Tal equação acima é o modelo de desconto de dividendos.
+
+    <h2>9.3 - Estimativa de dividendos em: modelo de desconto de dividendos</h2>
+    <h3>Dividendo de crescimento constante</h3>
+    Trata-se de uma forma de previsão do valor dos dividendos futuros providos por uma ação. A ação em questão é uma que se pretende adquirir, e permanecer com ela. <br>
+    A taxa constante de crescimento dos dividendos é g. Nesse caso, trata-se de uma perpetuidade constante.<br>
+    p0 = somatorio i= 1 a n, div1/(1+g)^(i-1)<br>
+    É possível o calculo do valor presente da perpetuidade dada pelo valor dos dividendos de uma ação. Tal cálculo é denominado Modelo de desconto de dividendos com
+    crescimento constante.<br>
+    p0 = div1/ (re-g)<br>
+    É possível inferir, a partir do modelo de desconto de dividendos com crescimento constante, o valor da empresa.  O valor da empresa dependerá de três variáveis: o
+    nível dos dividendos, o custo de capital próprio e a taxa de crescimento constante.
+    <h3>Ex 9.2</h3>
+    re =0.07; g=0.02; div1 = 2,30 entao p0=2,30/(re-g) = 2,30/(0.05) = 46.00 <br>
+    Observa-se que, como visto, a taxa de ganho de capital é o termo que corresponde à valorização do preço da ação. Tal valor é um dos termos da soma que corresponde ao
+    custo de capital próprio, o outro termo se refere aos dividendos, é a rentabilidade de dividendos. Observa-se que, isolando o termo re na equação do modelo de desconto
+    de dividendos com crescimento     constante, obtem-se que o custo de capital próprio é dado pela soma do termo relativo aos dividendos, e g. O termo g, ou seja, a taxa
+    de crescimento constante corresponde, portanto, à taxa de ganho de capital.<br>
+    <h3>Dividendo x investimento e crescimento</h3>
+    Observa-se que o nível de dividendos e a taxa de crescimento são grandezas diretamente proporcionais ao preço das ações da empresa. Isso se dá, no caso dos dividendos,
+    porque os mesmos estão no numerador do termo que representa o preço das ações, na equação do modelo de desconto de dividendos com crescimento constante. E ocorre, no
+    caso da taxa de crescimento, porque a mesma é subtraída do custo de capital próprio, no denominador de tal termo, na mesma equação.<br>
+    taxa de pagamento de dividendos é a parte dos rendimentos da empresa, destinados ao pagamento de dividendos.<br>
+    Para se entender o calculo da taxa de pagamento por dividendos é preciso entender o conceito de lucro por ação. O lucro por ação é dado pela variável EPSt. O lucro por
+    ação é dado por uma razão. No numerador da razão que representa o lucro por ação, estará os lucros, denominado lucrost. No denominador da razão que representa o lucro
+    por ação, estará p numero de ações em circulação. Ou seja, o lucro por ação é dado pela divisão dos lucros pelo numero de ações em circulação. <br>
+    A taxa de crescimento dos dividendos consiste em multiplicar o lucro por ação, por outro termo. O termo que se deve multiplicar o lucro por ação, para se obter a taxa de
+    pagamento de dividendos é a taxa de pagamento de dividendos. <br>
+    Assim, observa-se que o aumento de dividendos, por uma empresa, é dado de 3 formas. A primeira, é aumentar os lucros. A segunda, é diminuir o número de ações. Em ambos os
+    casos, pretende-se aumentar o valor do lucro por ação. A terceira forma de aumentar os dividendos é aumentar a taxa de pagamento de dividendos.<br>
+    A recompra de ações, pela empresa, deriva em diminuição do número de ações em circulação.<br>
+    As considerações que interessam, or ora, ao livro, dizem respeito a manter constante o numero de ações, e explorar o tradeoff entre reinvestimento de valores na empresa,
+    com vistas a lucros, e uso desses valores para aumentar a taxa de pagamento de dividendos. Novo cálculo é feito, considerando que aumentos futuros de lucros resultem
+    exclusivamente de aumento nos investimentos feitos com lucros retidos. Nesse caso, existe fórmula para o cálculo da mudança nos lucros:<br>
+    mudança nos lucros = novos investimentos x retorno sobre novos investimentos. <br>
+    Ou seja, se o retorno sobre o novo investimento for de 100%, então o que for feito em novo investimento corresponde à mudança nos lucros.<br>
+    Para calcular o valor dos novos investimentos é preciso conhecer o conceito de taxa de retenção. Tal taxa corresponde à fração dos lucros que ficam retidos pela empresa.<br>
+    Novos investimentos = lucros x taxa de retenção <br>
+    Ou seja, se a taxa de retenção for de 100%, todo o lucro será usado para novos investimentos.<br>
+    O uso das duas equações permitirá calcular a taxa de crescimento dos lucros.<br>
+    taxa de crescimento dos lucros = taxa de retenção x retono sobre investimentos <br>
+    Atentar para o fato que a taxa de crescimento dos lucros é a taxa de crescimento g, conforme visto na equação do calculo do preço da ação. Ou seja,<br>
+    g = taxa de retenção x retorno sobre novos investimentos <br>
+    Importante salientar que, no modelo de desconto de dividendos constante, caso se assuma o valor de dividendo constante, o crescimento no preço da ação se dará pelo aumento da
+    taxa g, ou seja, da taxa de crescimento dos lucros da empresa.
+
+    <h3>Ex 9.3</h3>
+    lucro por ação = 6;
+    1)p0 = 60;
+    2)div1 = div1 * 0.75; lucros retidos para novos investimentos; retorno sobre novos investimentos = 12% <br>
+    Necessário calculo do custo de capital próprio, re. É dado que g=0. O dividendo é o lucro por ação, 6. <br>
+    p0 = dv1 / (re- g)     =     60= 6/(re-0) = 60re=6 = re = 10% <br>
+    Novo dividendo = 0.75 * 6 = 4.5; taxa de retenção = 25%; considerando g= taxa de retenção x retorno sobre novos investimentos = 0.25 x 0.12 = 0.03; <br>
+    p0 = novo dividendo / (re- g)     = 60 = 4.5/(10% - 0.03) = 64.29
+
+    <h3>Ex 9.4</h3>
+    eps = 6; p0 =60; div1 = 0.75 * 6 = 4.5; retono sobre Novos investimentos = 8%; re = 10% <br>
+    p0 = div1 /(re -g)  = 4.5/(10% - g) -> o problema agora é calcular g = tx de retenção x retorno sobre novos investimentos  = 0.25 * 0.08 = 0.02 <br>
+    p0 = 4.5/0.08 = 56.25 <br>
+    Conclui-se dos exemplos que diminuir os dividendos div1 afim de se aumentar taxa de crescimento dependerá também da taxa de retorno sobre novos investimentos <br>
+    Ainda que a diminuição dos dividendos aumente a taxa de retenção, o crescimento dos lucros depende do produto dessa taxa de retenção pela taxa de retorno sobre
+    novos investimentos
+
+    <h3>Mundaça nas taxas de crescimento</h3>
+    Em casos quando o crescimento não se dá por uma taxa constante, pode-se avaliar determinado período da empresa, em que essa taxa se estabilizou
 
     <h2><a name="9.4">9.4</a></h2>
     O modelo de fluxo de caixa descontado é introduzido, e recomendado para o caso de alavancagem. O conceito de alavancagem ainda não é totalmente claro, e também não
