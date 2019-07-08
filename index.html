@@ -261,12 +261,15 @@ mensal. A tecla [ x y ] quando apertada após o cálculo dos juros, mostra o pri
     Observa-se que o nível de dividendos e a taxa de crescimento são grandezas diretamente proporcionais ao preço das ações da empresa. Isso se dá, no caso dos dividendos,
     porque os mesmos estão no numerador do termo que representa o preço das ações, na equação do modelo de desconto de dividendos com crescimento constante. E ocorre, no
     caso da taxa de crescimento, porque a mesma é subtraída do custo de capital próprio, no denominador de tal termo, na mesma equação.<br>
-    taxa de pagamento de dividendos é a parte dos rendimentos da empresa, destinados ao pagamento de dividendos.<br>
-    Para se entender o calculo da taxa de pagamento por dividendos é preciso entender o conceito de lucro por ação. O lucro por ação é dado pela variável EPSt. O lucro por
-    ação é dado por uma razão. No numerador da razão que representa o lucro por ação, estará os lucros, denominado lucrost. No denominador da razão que representa o lucro
-    por ação, estará p numero de ações em circulação. Ou seja, o lucro por ação é dado pela divisão dos lucros pelo numero de ações em circulação. <br>
+    taxa de pagamento de dividendos é a parte dos rendimentos da empresa, destinados ao pagamento de dividendos.<br><br>
+
+    Para se entender o calculo da taxa de pagamento por dividendos é preciso entender o conceito de <a name="lucro por acao">lucro por ação</a>. O lucro por ação é dado pela
+    variável EPSt. O lucro por     ação é dado por uma razão. No numerador da razão que representa o lucro por ação, estará os lucros, denominado lucrost. No denominador da
+    razão que representa o lucro por ação, estará p numero de ações em circulação. Ou seja, o lucro por ação é dado pela divisão dos lucros pelo numero de ações em circulação.
+    <br><br>
     A taxa de crescimento dos dividendos consiste em multiplicar o lucro por ação, por outro termo. O termo que se deve multiplicar o lucro por ação, para se obter a taxa de
-    pagamento de dividendos é a taxa de pagamento de dividendos. <br>
+    pagamento de dividendos é a taxa de pagamento de dividendos.
+    <br><br>
     Assim, observa-se que o aumento de dividendos, por uma empresa, é dado de 3 formas. A primeira, é aumentar os lucros. A segunda, é diminuir o número de ações. Em ambos os
     casos, pretende-se aumentar o valor do lucro por ação. A terceira forma de aumentar os dividendos é aumentar a taxa de pagamento de dividendos.<br>
     A recompra de ações, pela empresa, deriva em diminuição do número de ações em circulação.<br>
@@ -303,9 +306,32 @@ mensal. A tecla [ x y ] quando apertada após o cálculo dos juros, mostra o pri
     novos investimentos
 
     <h3>Mundaça nas taxas de crescimento</h3>
-    Em casos quando o crescimento não se dá por uma taxa constante, pode-se avaliar determinado período da empresa, em que essa taxa se estabilizou
+    Em casos quando o crescimento não se dá por uma taxa constante, pode-se avaliar determinado período da empresa, em que essa taxa se estabilizou. Considerando que
+    a taxa se estabiliza no período n+1, então pn = divn+1/(re-g)<br>
+    Este cáculo envolve trazer para valor presente a soma dos dividendos e do preço final
+    Ex: A) div1=2, div2=2.5, div3=3; g=5% (a partir do 4 ano); re=12% então P0= 2/1,12 + 2.5/(1.12)² + 3/(1.12)³ + (div4/7%)/(1.12)³ <br>
+    Observar que para achar div4 basta multiplicar div3 por (1+g), ou seja, 3*1,05, dado que se sabe que a partir de n=3 g=k=5%
 
-    <h2><a name="9.4">9.4</a></h2>
+    <h3>Ex 9.5</h3>
+    "A empresa está reinvestindo todos os lucros em expandir operações" = dividendos=0, taxa de retenção = 100% <br>
+    "os lucros eram de 2 por ação ano passado" = EPSt = 2; uso do conceito de <a href="#lucro por acao">lucro por ação</a><br>
+    "expectativa que cresçam 20%" g = 0.2; até ano 4, depois g=0.04<br>
+    "comece a pagar 60% dos lucros em dividendo" = div=0.6 * EPS, retenção = 0.4 <br>
+    er = 8%
+    O exercício provê o conhecimento de dois tipos de taxas: de crescimento dos lucros e de pagamento dos dividendos. Tais taxas são projeções para o futuros, e
+    deseja-se saber qual será o crescimento e o pagamento de dividendos no futuro. A taxa de crescimento em questão se refere a g=0.2 até ano 4, depois, queda.
+    A taxa de pgto de dividendos é 0 até ano 4, depois 0.6. A taxa de crescimento a partir do ano 4 é 0.04.<br>
+    Possibilidade de uso do modelo de desconto de dividendos com crescimento constante a partir do ano 4.<br>
+    A taxa de crescimento dos lucros se reflete simetricamente como taxa de crescimento do EPS <br>
+    O EPS inicial para o ano 0 é conhecido e vale 2. O conhecimento desse valor para os anos 1-4 se dá com a multiplicação por 1,2. Para além desse ano pelo
+    produto por 1.04.<br>
+    O dividendo é uma fração do lucro por ação. Essa informação permite entender que, do total de lucro por ação, se toma um percentual, relativo à taxa de
+    pagamento de dividendos, sendo o outro percentual relativo à taxa de renteção dos lucros. <br>
+    É possível com as informações constantes projetar o preço da ação, ao fim do ano 3. Tal preço é dado por P3=div4/(re-g), lembrando que no contexto de mudança
+    de taxa de crescimento, para calcular pn, ou seja, o preço imediatamente anterior à estabilização do crescimento, deve-se achar o modelo constante para p(n+1),
+    sendo n+1 o período em que o crescimento fica constante.
+
+    <h2><a name="9.4">Slide 9.4</a></h2>
     O modelo de fluxo de caixa descontado é introduzido, e recomendado para o caso de alavancagem. O conceito de alavancagem ainda não é totalmente claro, e também não
     se entendeu por que tal modelo seria apropriado para o caso. O que é o fluxo de caixa livre futuro? Parece ser um conceito importante para o modelo, pois ele é este
     fluxo de caixa livre futuro trazido a valor presente. A variável V0 representa o valor da empresa, e é o que se pretende calcular. Portanto, <br>
