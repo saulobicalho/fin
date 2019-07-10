@@ -66,6 +66,15 @@
     <h1>Prova 2, 20191</h1>
     <h2>Q1</h2>
     Modelo de fluxo de caixa descontado remete ao cap <a href="#9.4">9.4</a>
+    Dividend yield é rentabilidade de dividendos = div1/p0. No caso, 0.9/p0=0.03 entao p0 =30. OBS: confere com gabarito <br>
+
+    <h2>Q2</h2>
+    Amostra de cotações mensais, o quadro destaca uma ação. Tal ação possui uma rentabilidade. Tal rentabilidade, a da ação, possui um desvio padrão. O desvio padrão da
+    rentabilidade da ação no quadro, tal desvio indica um risco.<br>
+    Solução: desvio padrao é citado pela 1a vez na pag 10 do pdf do cap10. Relaciona-se à variância.<br>
+    Um erro comum é, para achar cada retorno, tirar a diferença do anterior. isto está errado, pois se deve tirar a diferença da média dos retornos!
+
+      <br>_____________________________________________________________________________________________________________________________
 
     <h1>Cap 1</h1>
     <h2><a name="corporacoes"> corporacoes</a></h2>
@@ -214,7 +223,9 @@ mensal. A tecla [ x y ] quando apertada após o cálculo dos juros, mostra o pri
     O custo de capital próprio é o custo usado como base para o desconto do fluxo de caixa de uma ação. Tal custo de capital próprio é uma taxa de retorno esperada. A
     taxa de retorno que se espera com o custo de capital próprio é similar a de outros investimentos. A similaridade na taxa de retorno de investimentos se dá com base
     na equivalência do risco dos investimentos. O risco dos outros investimentos, que dá base para o custo de capital próprio, deve ser similar ao risco das ações da
-    empresa. A taxa de retorno esperada deve ser disponível no mercado.<br>
+    empresa. A taxa de retorno esperada deve ser disponível no mercado.<br><br>
+
+    <a name="re">[Custo de capital próprio]</a><br>
     re é a taxa com que se desconta os fluxos de caixa, e representa o retorno esperado de outros investimentos, de risco similar ao das ações da empresa.<br>
     A equação determina o preço da ação: <br>
     p0=(div1 + p1)/1+re <br>
@@ -257,6 +268,7 @@ mensal. A tecla [ x y ] quando apertada após o cálculo dos juros, mostra o pri
     custo de capital próprio, o outro termo se refere aos dividendos, é a rentabilidade de dividendos. Observa-se que, isolando o termo re na equação do modelo de desconto
     de dividendos com crescimento     constante, obtem-se que o custo de capital próprio é dado pela soma do termo relativo aos dividendos, e g. O termo g, ou seja, a taxa
     de crescimento constante corresponde, portanto, à taxa de ganho de capital.<br>
+
     <h3>Dividendo x investimento e crescimento</h3>
     Observa-se que o nível de dividendos e a taxa de crescimento são grandezas diretamente proporcionais ao preço das ações da empresa. Isso se dá, no caso dos dividendos,
     porque os mesmos estão no numerador do termo que representa o preço das ações, na equação do modelo de desconto de dividendos com crescimento constante. E ocorre, no
@@ -329,7 +341,15 @@ mensal. A tecla [ x y ] quando apertada após o cálculo dos juros, mostra o pri
     pagamento de dividendos, sendo o outro percentual relativo à taxa de renteção dos lucros. <br>
     É possível com as informações constantes projetar o preço da ação, ao fim do ano 3. Tal preço é dado por P3=div4/(re-g), lembrando que no contexto de mudança
     de taxa de crescimento, para calcular pn, ou seja, o preço imediatamente anterior à estabilização do crescimento, deve-se achar o modelo constante para p(n+1),
-    sendo n+1 o período em que o crescimento fica constante.
+    sendo n+1 o período em que o crescimento fica constante. Lembrando que div4 = eps4 * taxa pagamento de dividendos = 2*(1.2)^4 * 0.6 = 2.48, e no denominador
+    re = 0.08, g=0.04 entao 2.48/0.04 = 64...<br>
+    Depois, basta trazer para valor presente o modelo de desconto de dividendos, ou seja, trazer para o presente a rentabilidade dos dividendos e o ganho de capital.
+    A rentabilidade de dividendos consiste na soma dos dividendos, correspondentes ao período anterior à estabilização. Isto ocorre porque os dividendos a serem
+    ganhos após a estabilização da taxa de crescimento já estão dentro do cálculo do preço, em p3. Notar que os dividendos serão trazidos a valor presente mediante a
+    divisão pela taxa acumulada de custo de capital, no período referido. Então, para cada período i anterior à estabilização do crescimento dos lucros, deve-se dividir
+    o respectivo dividendo por (1+re)^i, sendo re=k=0.08
+
+    <h2>9.4 - Modelos: Payout total e fluxo de caixa livre</h2>
 
     <h2><a name="9.4">Slide 9.4</a></h2>
     O modelo de fluxo de caixa descontado é introduzido, e recomendado para o caso de alavancagem. O conceito de alavancagem ainda não é totalmente claro, e também não
@@ -339,6 +359,26 @@ mensal. A tecla [ x y ] quando apertada após o cálculo dos juros, mostra o pri
     Obs: Fala-se ainda em WACC, não se sabe qual a relação com o modelo de fluxo de caixa livre futuro.<br>
     Como no lado esquerdo da equação está re, retorno esperado, e no lado direito o retorno total, pode-se dizer que o retorno total é o custo de capital próprio.<br>
 
+    <h1>Cap 10 Risco e Retorno</h1>
+    Fala-se como é desejado que a taxa de descapitalização seja o custo de capital próprio, embora ainda não se esteja claro o que isto significa. Fala-se como o risco do
+    projeto determina o custo de capital próprio. Apresenta-se a análise de histórico em bolsa de valores. O risco em ações é maior que em títulos de dívida. Existe a
+    métrica relativa ao retorno médio das ações. Investidores só determinam, obrigatoriamente, prêmio de risco, para aqueles que não podem ser eliminados por uma carteira
+    de títulos diferentes.
+    <h2>Calculando retornos históricos</h2>
+    Retorno realizado = rentabilidade do dividendo + ganho de capital. Para calculo de retorno, para o caso em que se ultrapasse o marco de um dividendo, deve-se especificar
+    qual foi a forma de investimento do valor dos dividendos. Um exemplo de tal investimento é o uso do valor dos dividendos para a aquisição de novas ações.<br>
+    Traçamento de gráfico de distribuição dos retornos possíveis.
+    <h3>Retornos anuais médios</h3>
+    Retorno anual médio é a média dos retornos ao longo de um determinado período. Soma-se os retornos e divide-se pelo número deles.
+    <h3>Variância e volatilidade dos retornos</h3>
+    Conceito de dispersão dos valores. O desvio-padrão é calculado sobre a distribuição de um dado investimento. Tal desvio-padrão determinará a variabilidade do retorno.<br>
+    O desvio-padrão é calculado a partir da variância da distribuição dos retornos. A variância é calculada tomando-se a diferença entre cada valor de retorno e o retorno
+    médio. Tais valores de diferenças são então somados, pretendendo-se achar um valor não-nulo. Isto, de achar um valor não-nulo, só é possível por se estar a trabalhar
+    com o quadrado das diferenças, caso contrário a soma de todas as diferenças resultaria em 0 (por se tratar da diferença quanto ao retorno médio). A soma resultante deve
+    sofrer a operação de retirada da raiz quadrada, sendo uma porcentagem.
+
+
+    <h2>Ex 10.2</h2>
 
   </body>
 </html>
